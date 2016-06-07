@@ -8,9 +8,9 @@ var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
 var runSequence = require('run-sequence');
 var rename = require('gulp-rename');
-var cssLess = requite('gulp-less');
 
 
+/*Limpa a pasta dist/*/
 gulp.task('clean', function(){
 	return gulp.src('dist/')
 	.pipe(clean());
@@ -30,7 +30,6 @@ gulp.task('uglify', function(){
 			'custom_components/js/*.js'
 		])
 	])
-	.pipe(concat('scripts.min.js'))
 	.pipe(gulp.dest('dist/js'));
 });
 
@@ -38,11 +37,10 @@ gulp.task('uglify', function(){
 gulp.task('cssmin', function(){
 	return es.merge([
 		gulp.src([
-			'custom_components/css/*.css'
+			'dev/css/*.css'
 		])
 		.pipe(cleanCSS())
 	])
-	.pipe(concat('styles.min.css'))
 	.pipe(gulp.dest('dist/css'));
 
 })
@@ -69,5 +67,5 @@ gulp.task('copyimg', function(){
 });
 
 gulp.task('prod', function(cb){
-	return runSequence('clean', ['jshint', 'uglify', 'copy', 'copyIndex', 'copyViews', 'copyimg', 'cssmin'], cb)
+	return runSequence('clean', ['jshint','uglify','cssmin','copyIndex','copyViews','copyimg'], cb)
 });
