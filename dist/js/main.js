@@ -8,7 +8,7 @@ $(window).scroll(function () {
     var AlturaMenu = 65;
 
     if(ScroolH > 75){
-    	$('.navbar').addClass('menu-hide').addClass('navbar-fixed-top');
+    	$('.navbar').addClass('menu-hide');
     }
 
     if(ScroolH < 75){
@@ -16,7 +16,7 @@ $(window).scroll(function () {
     }
 
     if(ScroolH > AlturaSection){
-    	$('.navbar').removeClass('menu-hide').addClass('menu-show');
+    	$('.navbar').removeClass('menu-hide').addClass('menu-show').addClass('navbar-fixed-top');
     }
 
 });
