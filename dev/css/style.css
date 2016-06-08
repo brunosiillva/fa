@@ -60,6 +60,9 @@ div {
 .flex .flex-item-left {
   margin-left: auto;
 }
+.flex .flex-item-bottom {
+  align-self: flex-end;
+}
 .line-white {
   background: url(../images/line-white.jpg) bottom left no-repeat;
 }
@@ -129,9 +132,25 @@ h1 {
   margin-bottom: 30px !important;
   display: block;
 }
+h2 {
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  line-height: 1em !important;
+  padding-bottom: 40px;
+  margin-bottom: 30px !important;
+  display: block;
+}
+h3 {
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  line-height: 1em !important;
+  margin-bottom: 20px !important;
+  display: block;
+}
 p {
   font-weight: 300 !important;
-  line-height: 2em !important;
+  line-height: 1.5em !important;
   display: block;
 }
 section {
@@ -146,7 +165,7 @@ section#banner img {
   width: 100%;
 }
 section#como-funciona {
-  background: url(../images/bg-como-funciona.png) top right no-repeat;
+  background: url(../images/bg-como-funciona.png) top center no-repeat;
 }
 section#como-funciona img {
   width: 586px;
@@ -161,7 +180,7 @@ section#como-funciona p {
   width: 355px;
 }
 section#equipamentos {
-  background: url(../images/bg-equipamentos.png) top right no-repeat;
+  background: url(../images/bg-equipamentos.png) top center no-repeat;
 }
 section#equipamentos img {
   width: 529px;
@@ -198,6 +217,57 @@ section#o-fa h1 {
 section#o-fa p {
   color: #fff;
   width: 500px;
+}
+section#sobre {
+  background: url(../images/bg-padrao-direita.png) center center no-repeat;
+}
+section#sobre h1,
+section#sobre p {
+  color: #882377;
+}
+section#sobre p {
+  width: 500px;
+}
+section#sobre img {
+  display: block;
+}
+section#sobre small {
+  display: block;
+  color: #fff;
+  width: 400px;
+  margin-top: 10px;
+}
+section#campo {
+  background: url(../images/bg-o-campo.jpg) center center no-repeat;
+}
+section#campo h2,
+section#campo p {
+  color: #fff;
+}
+section#campo p {
+  width: 500px;
+}
+section#campo img {
+  margin: 0 auto;
+}
+section#time {
+  background: url(../images/bg-time.png) center center no-repeat;
+}
+section#time h2,
+section#time h3,
+section#time p {
+  color: #882377;
+}
+section#time p {
+  color: #882377;
+  width: 500px;
+}
+section#curiosidade-time {
+  height: auto !important;
+  background: #5f1954;
+  color: #fff;
+  font-size: 18px;
+  padding: 50px 0px;
 }
 footer {
   border-top: 15px solid #5e064f;
