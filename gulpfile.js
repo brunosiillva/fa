@@ -53,9 +53,17 @@ gulp.task('copyIndex', function(){
 	.pipe(gulp.dest('dist/'));
 });
 
-/*Minifica os arquivos da pasta view, renomeia e copia para a pasta dist/view*/
+/*Minifica o arquivo sobre.html, renomeia e copia para a pasta dist/*/
+gulp.task('copySobre', function(){
+	return gulp.src('dev/sobre-o-futebol-americano-prod.html')
+	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename('sobre-o-futebol-americano.html'))
+	.pipe(gulp.dest('dist/'));
+});
+
+/*Minifica os arquivos da pasta view e copia para a pasta dist/view*/
 gulp.task('copyViews', function(){
-	return gulp.src('dev/view/*.html')
+	return gulp.src(['dev/view/*.html', 'dev/view/*/*.html'])
 	.pipe(htmlmin({collapseWhitespace: true}))
 	.pipe(gulp.dest('dist/view'));
 });

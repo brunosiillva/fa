@@ -219,7 +219,7 @@ section#o-fa p {
   width: 500px;
 }
 section#sobre {
-  background: url(../images/bg-padrao-direita.png) center center no-repeat;
+  background: url(../images/bg-padrao-direita.png) center bottom no-repeat;
 }
 section#sobre h1,
 section#sobre p {
@@ -238,7 +238,7 @@ section#sobre small {
   margin-top: 10px;
 }
 section#campo {
-  background: url(../images/bg-o-campo.jpg) center center no-repeat;
+  background: url(../images/bg-o-campo.jpg) center top no-repeat;
 }
 section#campo h2,
 section#campo p {
@@ -268,6 +268,32 @@ section#curiosidade-time {
   color: #fff;
   font-size: 18px;
   padding: 50px 0px;
+}
+section#inicio h2,
+section#inicio p {
+  color: #882377;
+}
+section#inicio h2 {
+  background-position: bottom center;
+}
+section#inicio .texto {
+  background-color: #fff;
+  padding: 50px;
+  margin-top: -60px;
+}
+section#pontuacao {
+  background-color: #2a153d;
+  background-image: url(../images/bg-fieldgoal.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section#pontuacao h2,
+section#pontuacao h3,
+section#pontuacao p {
+  color: #fff;
+}
+section#pontuacao p {
+  width: 400px;
 }
 footer {
   border-top: 15px solid #5e064f;
