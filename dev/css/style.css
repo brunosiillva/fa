@@ -18,6 +18,51 @@ div {
   transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
 }
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 13px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #882377;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: #882377;
+}
 .mat {
   margin-top: 50px;
 }
@@ -74,6 +119,13 @@ div {
 }
 .line-right {
   background-position: bottom right;
+}
+.shadow {
+  -webkit-box-shadow: -20px -20px 20px -15px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -20px -20px 20px -15px rgba(0, 0, 0, 0.7);
+  -ms-box-shadow: -20px -20px 20px -15px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: -20px -20px 20px -15px rgba(0, 0, 0, 0.7);
+  box-shadow: -20px -20px 20px -15px rgba(0, 0, 0, 0.7);
 }
 nav.navbar {
   -moz-transition-duration: 0.2s;
@@ -274,7 +326,7 @@ section#inicio h2,
 section#inicio p {
   color: #882377;
 }
-section#inicio h2 {
+section#inicio h2.inicio {
   background-position: bottom center;
 }
 section#inicio .texto {

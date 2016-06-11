@@ -24,12 +24,13 @@ gulp.task('jshint', function(){
 });
 
 /*Minifica o JS, concatena e um arquivo e copia para a pasta dist/js*/
-gulp.task('uglify', function(){
+gulp.task('jsmin', function(){
 	return es.merge([
 		gulp.src([
 			'custom_components/js/*.js'
 		])
 	])
+	.pipe(uglify())
 	.pipe(gulp.dest('dist/js'));
 });
 
@@ -75,5 +76,5 @@ gulp.task('copyimg', function(){
 });
 
 gulp.task('prod', function(cb){
-	return runSequence('clean', ['jshint','uglify','cssmin','copyIndex','copySobre','copyViews','copyimg'], cb)
+	return runSequence('clean', ['jshint','jsmin','cssmin','copyIndex','copySobre','copyViews','copyimg'], cb)
 });
