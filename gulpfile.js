@@ -70,10 +70,10 @@ gulp.task('copyViews', function(){
 
 /*Copia os arquivos da pasta images e copia para a pasta dist/view*/
 gulp.task('copyimg', function(){
-	return gulp.src('dev/images/*')
+	return gulp.src(['dev/images/*.jpg','dev/images/*.png'])
 	.pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('prod', function(cb){
-	return runSequence('clean', ['jshint','uglify','cssmin','copyIndex','copyViews','copyimg'], cb)
+	return runSequence('clean', ['jshint','uglify','cssmin','copyIndex','copySobre','copyViews','copyimg'], cb)
 });

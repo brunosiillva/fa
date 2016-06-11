@@ -82,6 +82,7 @@ nav.navbar {
   transition-duration: 0.2s;
   position: absolute;
   width: 100%;
+  z-index: 1030;
 }
 nav.navbar li a {
   color: #fff;
@@ -294,6 +295,38 @@ section#pontuacao p {
 }
 section#pontuacao p {
   width: 400px;
+}
+section#pontuacao .infos-slider p {
+  height: 145px;
+}
+section#pontuacao .hide,
+section#pontuacao .show {
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+section#pontuacao .nav i {
+  border-radius: 100%;
+  padding: 14px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+section#pontuacao .nav i.mar {
+  margin-right: 20px;
+  text-align: left;
+}
+section#pontuacao .nav i.mal {
+  margin-left: 20px;
+  text-align: right;
+}
+section#pontuacao .nav i:hover {
+  cursor: pointer;
+  background-color: #1d0e2a;
 }
 footer {
   border-top: 15px solid #5e064f;
