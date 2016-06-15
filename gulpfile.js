@@ -70,6 +70,28 @@ gulp.task('copyEquipamentos', function(){
 	.pipe(gulp.dest('dist/'));
 });
 
+/*Minifica o arquivo os-equipamentos.html, renomeia e copia para a pasta dist/*/
+gulp.task('copyPosicoes', function(){
+	return gulp.src('dev/posicoes-jogadores-prod.html')
+	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename('posicoes-jogadores.html'))
+	.pipe(gulp.dest('dist/'));
+});
+
+gulp.task('copyPosicoesA', function(){
+	return gulp.src('dev/posicoes-jogadores-ataque-prod.html')
+	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename('posicoes-jogadores-ataque.html'))
+	.pipe(gulp.dest('dist/'));
+});
+
+gulp.task('copyPosicoesD', function(){
+	return gulp.src('dev/posicoes-jogadores-defesa-prod.html')
+	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename('posicoes-jogadores-defesa.html'))
+	.pipe(gulp.dest('dist/'));
+});
+
 /*Minifica os arquivos da pasta view e copia para a pasta dist/view*/
 gulp.task('copyViews', function(){
 	return gulp.src(['dev/view/*.html', 'dev/view/*/*.html'])
@@ -84,5 +106,5 @@ gulp.task('copyimg', function(){
 });
 
 gulp.task('prod', function(cb){
-	return runSequence('clean', ['jshint','jsmin','cssmin','copyIndex','copySobre', 'copyEquipamentos', 'copyViews','copyimg'], cb)
+	return runSequence('clean', ['jshint','jsmin','cssmin','copyIndex','copySobre','copyEquipamentos','copyPosicoes','copyPosicoesA','copyPosicoesD','copyViews','copyimg'], cb)
 });

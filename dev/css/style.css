@@ -120,6 +120,9 @@ div {
 .line-right {
   background-position: bottom right;
 }
+.line-center {
+  background-position: bottom center;
+}
 .shadow {
   -webkit-box-shadow: -20px -20px 20px -15px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: -20px -20px 20px -15px rgba(0, 0, 0, 0.7);
@@ -426,6 +429,60 @@ section#posicoes h2 a {
 }
 section#posicoes .texto {
   background: #2a153d;
+}
+section#posicoes-geral {
+  background: url(../images/bg-posicoes-geral.jpg) center center no-repeat;
+  color: #fff;
+}
+section#posicoes-geral .posicoes {
+  background: url(../images/bg-sombra-posicoes.png) center center no-repeat #2a153d;
+  padding: 20px;
+}
+section#posicoes-geral .posicoes a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 700;
+}
+section#posicoes-ataque,
+section#posicoes-defesa {
+  background: url(../images/bg-posicoes-defesa-ataque.jpg) center center no-repeat;
+  color: #fff;
+}
+section#posicoes-ataque .infos,
+section#posicoes-defesa .infos {
+  margin-top: 70px;
+}
+section#posicoes-ataque .texto,
+section#posicoes-defesa .texto {
+  background-color: #fff;
+  padding: 30px;
+  color: #882377;
+}
+section#posicoes-ataque .outras-posicoes,
+section#posicoes-defesa .outras-posicoes {
+  padding: 20px;
+  background: #2a153d;
+}
+section#posicoes-ataque .outras-posicoes p,
+section#posicoes-defesa .outras-posicoes p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700 !important;
+  display: inline-block;
+}
+section#posicoes-ataque .outras-posicoes a,
+section#posicoes-defesa .outras-posicoes a {
+  display: inline-block;
+}
+section#posicoes-ataque .container {
+  background: url(../images/bg-posicoes-ataque.png) 30px bottom no-repeat;
+}
+section#posicoes-defesa .container {
+  background: url(../images/bg-posicoes-defesa.png) 30px bottom no-repeat;
 }
 footer {
   border-top: 15px solid #5e064f;
