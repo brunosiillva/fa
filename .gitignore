@@ -40,6 +40,5 @@ Thumbs.db
 ##############
 *.less
 
-custom_components
-bower_components
+ower_components
 node_modules

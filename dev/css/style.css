@@ -145,7 +145,9 @@ nav.navbar li a {
   font-size: 16px;
   text-transform: uppercase;
 }
-nav.navbar li a:hover {
+nav.navbar li a:hover,
+nav.navbar li a:active,
+nav.navbar li a:focus {
   background-color: transparent !important;
 }
 nav.navbar.menu-hide {
@@ -510,6 +512,15 @@ footer ul li.first {
   padding-bottom: 20px;
   margin-bottom: 25px;
   background: url(../images/line-lista.jpg) left bottom no-repeat;
+}
+footer ul li a {
+  color: #fff;
+}
+footer ul li a:hover,
+footer ul li a:active,
+footer ul li a:focus {
+  color: #fff;
+  text-decoration: none;
 }
 footer .copy {
   font-size: 12px;
