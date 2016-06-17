@@ -1,1 +1,1 @@
-!function(){"use strict";var o=angular.module("fa",[]);o.controller("homeController",function(o){})}();
+!function(){"use strict";var o=angular.module("fa",[]);o.controller("homeController",function(o){}),o.controller("footerController",["$scope","$location",function(o,r,l){var n=r.absUrl();o.link=n}])}();
