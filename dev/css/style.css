@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: 'Roboto Slab', serif !important;
   background: url(../images/bg-body.jpg);
+  overflow-x: hidden;
 }
 div {
   -webkit-transition: all 0.2s ease-out;
@@ -39,6 +40,7 @@ div {
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  z-index: 99999999999;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -59,9 +61,11 @@ div {
   background-clip: padding-box;
   background: #741e65;
   cursor: pointer;
+  z-index: 99999999999;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
   background-color: #741e65;
+  z-index: 99999999999;
 }
 .mat {
   margin-top: 50px;
