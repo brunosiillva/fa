@@ -12,5 +12,12 @@
 		$scope.link = host;
 
 	}]);
+
+	myApp.controller('ListaTermos', ['$scope','$http', function($scope, $http){
+
+		$http.get('json/termos.json').success(function(data){
+			$scope.termoslista = data;
+		});
+	}]);
 	
 })();

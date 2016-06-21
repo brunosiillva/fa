@@ -1,1 +1,1 @@
-!function(){"use strict";var o=angular.module("fa",[]);o.controller("homeController",function(o){}),o.controller("footerController",["$scope","$location",function(o,r,l){var n=r.absUrl();o.link=n}])}();
+!function(){"use strict";var o=angular.module("fa",[]);o.controller("homeController",function(o){}),o.controller("footerController",["$scope","$location",function(o,t,n){var r=t.absUrl();o.link=r}]),o.controller("ListaTermos",["$scope","$http",function(o,t){t.get("json/termos.json").success(function(t){o.termoslista=t})}])}();

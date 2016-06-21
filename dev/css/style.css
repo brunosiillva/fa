@@ -490,6 +490,30 @@ section#posicoes-ataque .container {
 section#posicoes-defesa .container {
   background: url(../images/bg-posicoes-defesa.png) 30px bottom no-repeat;
 }
+section#termos {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: auto !important;
+}
+section#termos h2,
+section#termos h3,
+section#termos p {
+  color: #882377;
+}
+section#termos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section#termos .busca {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section#termos .busca input {
+  padding: 30px;
+  border-radius: 0px;
+  border: 1px solid #882377;
+}
 footer {
   border-top: 15px solid #5e064f;
   background: #882377;
