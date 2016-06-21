@@ -1,16 +1,17 @@
 <section id="termos" data-ng-controller="ListaTermos">
 	<div class="container">
 		<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-			<h2 class="text-left line-color line-left">Termos mais Utilizados <br/>no Futebol Americano</h2>
+			<h1 class="text-left line-color line-left">Termos mais Utilizados <br/>no Futebol Americano</h1>
 			<p class="text-left">O futebol americano teve um crescimento muito grande aqui no Brasil, mas o que ainda acontece muito é as pessoas não intenderem o que está acontecendo durante uma partida, muitas vezes por causa dos termos usados serem em inglês e pela falta de conhecimento desses termos.</p>
 			<p class="text-left">Depois que você conhece esses termos o jogo de futebol americano fica muito mais fácil de intender, e de se apaixonar por esse esporte.</p>
-			<p class="text-left">Pensando nisso resolvemos fazer um compilado de termos utilizados no futebol americano para você conseguir intender melhor e pegar as manhas do esporte. Você pode utilizar o campo de busca abaixo ou simplesmente ir lendo todos os termos listados, esperamos que você goste :D</p>
+			<p class="text-left">Pensando nisso resolvemos fazer um compilado de termos utilizados no futebol americano para você conseguir intender melhor e pegar as manhas do esporte.</p>
+			<h2>Utilize o campo abaixo para encontrar <br/>o termo que você procura</h2>
 			<div class="form-group busca">
 				<input type="text" class="form-control" placeholder="Search" data-ng-model="busca.termo">
 			</div>
 			<ul>
 				<li data- ng-repeat="termos in termoslista | filter: busca | orderBy: 'termo'">
-					<h3>{{termos.id}}-{{termos.termo}}</h3>
+					<h3>{{termos.termo}}</h3>
 					<p>{{termos.descricao}}</p>
 				</li>
 			</ul>

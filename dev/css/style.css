@@ -134,6 +134,16 @@ div {
   -o-box-shadow: -20px -20px 20px -15px rgba(0, 0, 0, 0.7);
   box-shadow: -20px -20px 20px -15px rgba(0, 0, 0, 0.7);
 }
+.paginas nav {
+  background: -webkit-linear-gradient(left, #882377, #1c378f);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #882377, #1c378f);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #882377, #1c378f);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #882377, #1c378f);
+  /* Standard syntax */
+}
 nav.navbar {
   -moz-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
@@ -495,15 +505,33 @@ section#termos {
   padding-bottom: 50px;
   height: auto !important;
 }
+section#termos h1,
 section#termos h2,
 section#termos h3,
 section#termos p {
   color: #882377;
 }
+section#termos h2 {
+  margin-top: 40px;
+  padding: 0;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+section#termos h3 {
+  margin-top: 0;
+}
 section#termos ul {
   list-style: none;
-  padding: 0;
+  padding: 0 30px;
   margin: 0;
+  background: #fff;
+}
+section#termos ul li {
+  border-bottom: 1px solid #eebce5;
+  padding-top: 30px;
+}
+section#termos ul li p {
+  margin-bottom: 20px;
 }
 section#termos .busca {
   margin-top: 50px;
