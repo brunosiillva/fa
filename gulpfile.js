@@ -9,6 +9,7 @@ var cleanCSS = require('gulp-clean-css');
 var runSequence = require('run-sequence');
 var rename = require('gulp-rename');
 var jsonMinify = require('gulp-json-minify');
+var smushit = require('gulp-smushit');
 
 
 /*Limpa a pasta dist/*/
@@ -102,7 +103,8 @@ gulp.task('copyViews', function(){
 
 /*Copia os arquivos da pasta images e copia para a pasta dist/view*/
 gulp.task('copyimg', function(){
-	return gulp.src(['dev/images/*.jpg','dev/images/*.png','dev/images/*.ico'])
+	return gulp.src(['dev/images/*.{jpg,png}'])
+	//.pipe(smushit())
 	.pipe(gulp.dest('dist/images'));
 });
 
