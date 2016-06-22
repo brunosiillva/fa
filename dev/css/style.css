@@ -222,6 +222,20 @@ nav.navbar .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
 }
+nav.navbar .navbar-toggle {
+  border: 1px solid #fff;
+}
+nav.navbar .navbar-toggle .icon-bar {
+  background: #fff;
+}
+nav.navbar .navbar-collapse {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+nav.navbar .navbar-nav {
+  margin: 7.5px -10px;
+}
 h1 {
   text-transform: uppercase !important;
   font-size: 32px !important;
@@ -748,5 +762,149 @@ footer .copy {
   }
   footer img {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 425px) {
+  section {
+    height: auto;
+    padding: 20px 0px;
+  }
+  section#banner {
+    padding: 80px 0px 40px 0px;
+  }
+  section#como-funciona {
+    padding: 40px 0;
+  }
+  section#como-funciona .btn-round {
+    margin-top: 20px;
+    border-color: #882377;
+    color: #882377;
+  }
+  section#equipamentos {
+    padding: 40px 0;
+    background: #882377;
+  }
+  section#equipamentos h1,
+  section#equipamentos h2,
+  section#equipamentos p {
+    color: #fff !important;
+    text-align: left;
+    width: 100%;
+  }
+  section#equipamentos h1,
+  section#equipamentos h2 {
+    background: url(../images/line-white.jpg) bottom left no-repeat;
+  }
+  section#equipamentos .btn-round {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-color: #fff;
+    color: #fff;
+  }
+  section#equipamentos .icon-equips {
+    width: 220px;
+    margin: 0 auto;
+  }
+  section#equipamentos .icon-equips li {
+    background: #fff;
+    border-radius: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 10px;
+  }
+  section#equipamentos .icon-equips li img {
+    max-width: 70%;
+  }
+  section#o-fa {
+    padding: 40px 0;
+    background-position-x: right;
+  }
+  section#o-fa h1,
+  section#o-fa h2,
+  section#o-fa p {
+    text-align: left;
+    background-position-x: left;
+    width: 100%;
+  }
+  section#como-funciona,
+  section#sobre,
+  section#campo,
+  section#time {
+    background: none;
+  }
+  section#como-funciona h1,
+  section#sobre h1,
+  section#campo h1,
+  section#time h1,
+  section#como-funciona h2,
+  section#sobre h2,
+  section#campo h2,
+  section#time h2,
+  section#como-funciona h3,
+  section#sobre h3,
+  section#campo h3,
+  section#time h3,
+  section#como-funciona p,
+  section#sobre p,
+  section#campo p,
+  section#time p {
+    text-align: left;
+    width: 100%;
+    color: #882377 !important;
+  }
+  section#como-funciona h1,
+  section#sobre h1,
+  section#campo h1,
+  section#time h1,
+  section#como-funciona h2,
+  section#sobre h2,
+  section#campo h2,
+  section#time h2 {
+    background: url(../images/line-color.jpg) bottom left no-repeat;
+  }
+  section#como-funciona img,
+  section#sobre img,
+  section#campo img,
+  section#time img {
+    max-width: 100%;
+  }
+  section#sobre {
+    padding: 80px 0px 0px 0px;
+  }
+  section#sobre small {
+    color: #882377;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  section#campo .col-xs-12 .col-xs-12 {
+    padding: 0;
+  }
+  section#inicio img {
+    margin-bottom: 0;
+  }
+  section#pontuacao .infos-slider p {
+    height: 140px;
+  }
+  section#posicoes-geral {
+    padding: 100px 0 60px;
+  }
+  section#posicoes-geral .posicoes {
+    background-image: none;
+  }
+  section#posicoes-defesa .outras-posicoes p,
+  section#posicoes-ataque .outras-posicoes p {
+    width: 100%;
+    text-align: center;
+  }
+  section#posicoes-defesa .outras-posicoes a,
+  section#posicoes-ataque .outras-posicoes a {
+    margin-top: 20px;
+    display: block;
+    float: none !important;
+  }
+  section#posicoes h2 a {
+    display: block;
+    margin-top: 20px;
   }
 }
