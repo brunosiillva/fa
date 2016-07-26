@@ -236,6 +236,31 @@ nav.navbar .navbar-collapse {
 nav.navbar .navbar-nav {
   margin: 7.5px -10px;
 }
+.times-menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #fff;
+}
+.times-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.times-menu ul li {
+  list-style: none;
+  display: inline-block;
+  width: calc(6.66666667%);
+}
+.times-menu ul li a {
+  width: 100%;
+  display: block;
+}
+.times-menu ul li a img {
+  margin: 0 auto;
+  max-width: 55px;
+  width: 100%;
+  display: block;
+}
 h1 {
   text-transform: uppercase !important;
   font-size: 32px !important;
@@ -572,6 +597,102 @@ section#termos .busca input {
   border-radius: 0px;
   border: 1px solid #882377;
   width: 100%;
+}
+section#times {
+  height: auto;
+}
+section#times .foto-time {
+  width: 100%;
+  height: 710px;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 70px;
+}
+section#times .foto-time h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 640px;
+  margin-bottom: 0;
+  padding: 0;
+}
+section#times h2 {
+  font-size: 30px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+section#times .o-time img {
+  margin-right: 30px;
+}
+section#times .o-time p {
+  color: #000;
+  text-align: justify;
+}
+section#times .noticias {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+section#times .noticias img {
+  max-width: 100%;
+}
+section#times .jogadores-time .nav-tabs.nav-justified > .active > a {
+  background-color: transparent;
+  border-color: #882377;
+  color: #882377;
+  font-size: 18px;
+  border-bottom: none;
+}
+section#times .jogadores-time .nav-tabs.nav-justified > li > a {
+  border-bottom-color: #882377;
+  color: #882377;
+  font-size: 18px;
+}
+section#times .jogadores-time .nav > li > a:hover {
+  background-color: #882377;
+  color: #fff;
+}
+section#times .jogadores-time ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+section#times .jogadores-time ul li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+section#times .jogadores-time ul li .card {
+  padding: 5px 5px 15px;
+  background-color: #fdcf1a;
+}
+section#times .jogadores-time ul li .card img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+section#times .jogadores-time ul li .card span {
+  color: #000;
+  display: block;
+  font-style: 10px !important;
+}
+section#times .sidebar {
+  background-color: #fff;
+  padding: 20px;
+}
+section#times .sidebar h3 {
+  background-color: #882377;
+  text-align: center;
+  color: #fff;
+  margin: 0 !important;
+  font-size: 28px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+section#times .sidebar img {
+  max-width: 100%;
 }
 footer {
   border-top: 15px solid #5e064f;

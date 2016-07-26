@@ -9,7 +9,7 @@ var cleanCSS = require('gulp-clean-css');
 var runSequence = require('run-sequence');
 var rename = require('gulp-rename');
 var jsonMinify = require('gulp-json-minify');
-var smushit = require('gulp-smushit');
+var imagemin = require('gulp-imagemin');
 
 
 /*Limpa a pasta dist/*/
@@ -40,7 +40,8 @@ gulp.task('jsmin', function(){
 gulp.task('cssmin', function(){
 	return es.merge([
 		gulp.src([
-			'dev/css/*.css'
+			'dev/css/*.css',
+			'node_modules/angular-ui-bootstrap/src/tooltip/tooltip.css'
 		])
 		.pipe(cleanCSS())
 	])
@@ -94,6 +95,12 @@ gulp.task('copyTermos', function(){
 	.pipe(gulp.dest('dist/'));
 });
 
+gulp.task('copyTimes', function(){
+	return gulp.src('dev/os-times-prod.html')
+	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(gulp.dest('dist/'));
+});
+
 /*Minifica os arquivos da pasta view e copia para a pasta dist/view*/
 gulp.task('copyViews', function(){
 	return gulp.src(['dev/view/*.html', 'dev/view/*/*.html'])
@@ -104,7 +111,7 @@ gulp.task('copyViews', function(){
 /*Copia os arquivos da pasta images e copia para a pasta dist/view*/
 gulp.task('copyimg', function(){
 	return gulp.src(['dev/images/*.{jpg,png}'])
-	//.pipe(smushit())
+	.pipe(imagemin())
 	.pipe(gulp.dest('dist/images'));
 });
 

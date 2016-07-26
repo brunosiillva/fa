@@ -3,9 +3,6 @@ $(function () {
 })
 
 $(window).load(function(){
-
-
-    
     var largura = $(this).width();
     if(largura > 768){
         $(window).scroll(function () {

@@ -1,0 +1,79 @@
+[ 
+	{ 
+		"id": 1,
+		"nome": "Botafogo Reptiles",
+		"img": "botafogo-reptiles",
+		"estado": "",
+		"regiao": ""
+	},
+	{ 
+		"id": 2,
+		"nome": "Coritiba Crocodiles",
+		"img": "coritiba-crocodiles"
+	},
+	{ 
+		"id": 3,
+		"nome": "Joinville Gladiators",
+		"img": "joinville-gladiators"
+	},
+	{ 
+		"id": 4,
+		"nome": "Leme Lizards",
+		"img": "leme-lizards"
+	},
+	{ 
+		"id": 5,
+		"nome": "Lusa Lions",
+		"img": "lusa-lions"
+	},
+	{ 
+		"id": 6,
+		"nome": "Macae Oilers",
+		"img": "macae-oilers"
+	},
+	{ 
+		"id": 7,
+		"nome": "Steamrollers",
+		"img": "steamrollers"
+	},
+	{ 
+		"id": 8,
+		"nome": "Miners",
+		"img": "miners"
+	},
+	{ 
+		"id": 9,
+		"nome": "Paulista Ocelots",
+		"img": "paulista-ocelots"
+	},
+	{ 
+		"id": 10,
+		"nome": "Prto Alegre Pumpkins",
+		"img": "porto-alegre-pumpkins"
+	},
+	{ 
+		"id": 11,
+		"nome": "Santa Cruz Chacais",
+		"img": "santa-cruz-chacais"
+	},
+	{ 
+		"id": 12,
+		"nome": "Santos Tsunami",
+		"img": "santos-tsunami"
+	},
+	{ 
+		"id": 13,
+		"nome": "Sao Jose Istepos",
+		"img": "sao-jose-istepos"
+	},
+	{ 
+		"id": 14,
+		"nome": "Sao Paulo Storm.",
+		"img": "sao-paulo-storm"
+	},
+	{ 
+		"id": 15,
+		"nome": "Sorocaba Vipers",
+		"img": "sorocaba-vipers"
+	}
+]
