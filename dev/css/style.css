@@ -237,18 +237,18 @@ nav.navbar .navbar-nav {
   margin: 7.5px -10px;
 }
 .times-menu {
-  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   background: #fff;
-  position: fixed;
+  position: absolute;
+  width: 100%;
   top: 65px;
   z-index: 99;
-  -webkit-transition: all 0.05s ease-out;
-  -moz-transition: all 0.05s ease-out;
-  -o-transition: all 0.05s ease-out;
-  transition: all 0.05s ease-out;
-  -ms-transition: all 0.05s ease-out;
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+  -ms-transition: all 0s ease-out;
 }
 .times-menu ul {
   list-style: none;
@@ -271,11 +271,12 @@ nav.navbar .navbar-nav {
   display: block;
 }
 .times-menu.active {
-  -webkit-transition: all 0.05s ease-out;
-  -moz-transition: all 0.05s ease-out;
-  -o-transition: all 0.05s ease-out;
-  transition: all 0.05s ease-out;
-  -ms-transition: all 0.05s ease-out;
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+  -ms-transition: all 0s ease-out;
+  position: fixed;
   top: 0;
 }
 h1 {
