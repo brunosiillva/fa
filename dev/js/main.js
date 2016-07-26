@@ -12,10 +12,12 @@ $(window).load(function(){
 
             if(ScroolH > 75){
                 $('.navbar').addClass('menu-hide');
+                $('.times-menu').addClass('active');
             }
 
             if(ScroolH < 75){
                 $('.navbar').removeClass('menu-hide').removeClass('menu-show');
+                $('.times-menu').removeClass('active');
             }
 
             if(ScroolH > AlturaSection){

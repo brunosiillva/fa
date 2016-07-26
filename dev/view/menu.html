@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" data-ng-controller="menuController">
 	<div class="container">
 		<div class="col-md-12">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -24,17 +24,4 @@
 			</div><!-- /.navbar-collapse -->
 		</div>
 	</div><!-- /.container-fluid -->
-	<div class="times-menu">
-		<div class="row">
-			<div class="container" data-ng-controller="ListaTimes">
-				<ul>
-					<li ng-repeat="time in timeslista | orderBy:random">
-						<a href="{{time.img}}">
-							<img src="images/times/{{time.img}}.jpg" alt="Logotipo do {{time.nome}}"  uib-tooltip="{{time.nome}}" tooltip-trigger="focus" tooltip-placement="bottom" itle="{{time.nome}}">
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
 </nav>

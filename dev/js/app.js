@@ -8,6 +8,11 @@
 		$scope.title = "Primeira Jarda - O seu site sobre Futebol Americano";
 	});
 
+	myApp.controller('menuController', function( $location ){
+		var location = $location.absUrl().substr(1);
+		console.log(location);
+	});
+
 	myApp.controller('footerController', ['$scope', '$location',  function($scope, $location, $anchorScroll){
 		var host = $location.absUrl();
 		$scope.link = host;

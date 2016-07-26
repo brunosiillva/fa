@@ -20,6 +20,19 @@
 </head>
 <body>
 	<div class="paginas" data-ng-include="'view/menu.html'"></div>
+	<div class="times-menu">
+		<div class="row">
+			<div class="container" data-ng-controller="ListaTimes">
+				<ul>
+					<li ng-repeat="time in timeslista | orderBy:random">
+						<a href="{{time.img}}">
+							<img src="images/times/{{time.img}}.jpg" alt="Logotipo do {{time.nome}}"  uib-tooltip="{{time.nome}}" tooltip-trigger="focus" tooltip-placement="bottom" itle="{{time.nome}}">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div data-ng-include="'view/times/criciuma-miners.html'"></div>
 	<div data-ng-include="'view/footer.html'"></div>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

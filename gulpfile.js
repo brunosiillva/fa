@@ -29,7 +29,8 @@ gulp.task('jshint', function(){
 gulp.task('jsmin', function(){
 	return es.merge([
 		gulp.src([
-			'dev/js/*.js'
+			'dev/js/*.js',
+			'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js'
 		])
 	])
 	.pipe(uglify())
@@ -51,53 +52,61 @@ gulp.task('cssmin', function(){
 
 /*Minifica o arquivo index.html e copia para a pasta dist/*/
 gulp.task('copyIndex', function(){
-	return gulp.src('dev/index.html')
+	return gulp.src('dev/index-prod.html')
 	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename("index.html"))
 	.pipe(gulp.dest('dist/'));
 });
 
 /*Minifica o arquivo sobre-o-futebol-americano.html e copia para a pasta dist/*/
 gulp.task('copySobre', function(){
-	return gulp.src('dev/sobre-o-futebol-americano.html')
+	return gulp.src('dev/sobre-o-futebol-americano-prod.html')
 	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename("sobre-o-futebol-americano.html"))
 	.pipe(gulp.dest('dist/'));
 });
 
 /*Minifica o arquivo os-equipamentos.html e copia para a pasta dist/*/
 gulp.task('copyEquipamentos', function(){
-	return gulp.src('dev/os-equipamentos.html')
+	return gulp.src('dev/os-equipamentos-prod.html')
 	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename("os-equipamentos.html"))
 	.pipe(gulp.dest('dist/'));
 });
 
 /*Minifica o arquivo os-equipamentos.html e copia para a pasta dist/*/
 gulp.task('copyPosicoes', function(){
-	return gulp.src('dev/posicoes-jogadores.html')
+	return gulp.src('dev/posicoes-jogadores-prod.html')
 	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename("posicoes-jogadores.html"))
 	.pipe(gulp.dest('dist/'));
 });
 
 gulp.task('copyPosicoesA', function(){
-	return gulp.src('dev/posicoes-jogadores-ataque.html')
+	return gulp.src('dev/posicoes-jogadores-ataque-prod.html')
 	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename("posicoes-jogadores-ataque.html"))
 	.pipe(gulp.dest('dist/'));
 });
 
 gulp.task('copyPosicoesD', function(){
-	return gulp.src('dev/posicoes-jogadores-defesa.html')
+	return gulp.src('dev/posicoes-jogadores-defesa-prod.html')
 	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename("posicoes-jogadores-defesa.html"))
 	.pipe(gulp.dest('dist/'));
 });
 
 gulp.task('copyTermos', function(){
-	return gulp.src('dev/termos.html')
+	return gulp.src('dev/termos-prod.html')
 	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename("termos.html"))
 	.pipe(gulp.dest('dist/'));
 });
 
 gulp.task('copyTimes', function(){
 	return gulp.src('dev/os-times-prod.html')
 	.pipe(htmlmin({collapseWhitespace: true}))
+	.pipe(rename("os-times.html"))
 	.pipe(gulp.dest('dist/'));
 });
 
@@ -110,7 +119,7 @@ gulp.task('copyViews', function(){
 
 /*Copia os arquivos da pasta images e copia para a pasta dist/view*/
 gulp.task('copyimg', function(){
-	return gulp.src(['dev/images/*.{jpg,png}'])
+	return gulp.src(['dev/images/**'])
 	.pipe(imagemin())
 	.pipe(gulp.dest('dist/images'));
 });
@@ -123,5 +132,5 @@ gulp.task('jsonminify', function() {
 });
 
 gulp.task('prod', function(cb){
-	return runSequence('clean', ['jshint','jsmin','cssmin','copyIndex','copySobre','copyEquipamentos','copyPosicoes','copyPosicoesA','copyPosicoesD','copyTermos','copyViews','copyimg','jsonminify'], cb)
+	return runSequence('clean', ['jshint','jsmin','cssmin','copyIndex','copySobre','copyEquipamentos','copyPosicoes','copyPosicoesA','copyPosicoesD','copyTermos','copyViews','copyTimes','copyimg','jsonminify'], cb)
 });
