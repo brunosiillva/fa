@@ -222,6 +222,9 @@ nav.navbar .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
 }
+nav.navbar .navbar-brand > img {
+  max-height: 50px;
+}
 nav.navbar .navbar-toggle {
   border: 1px solid #fff;
 }

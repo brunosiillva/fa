@@ -10,7 +10,7 @@
 
 	myApp.controller('menuController', function( $location ){
 		var location = $location.absUrl().substr(1);
-		console.log(location);
+		//console.log(location);
 	});
 
 	myApp.controller('footerController', ['$scope', '$location',  function($scope, $location, $anchorScroll){
@@ -30,5 +30,5 @@
 			$scope.timeslista = data;
 		});
 	}]);
-	
+
 })();
