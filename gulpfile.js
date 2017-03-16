@@ -42,7 +42,8 @@ gulp.task('cssmin', function(){
 	return es.merge([
 		gulp.src([
 			'dev/css/*.css',
-			'node_modules/angular-ui-bootstrap/src/tooltip/tooltip.css'
+			'node_modules/angular-ui-bootstrap/src/tooltip/tooltip.css',
+			'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css'
 		])
 		.pipe(cleanCSS())
 	])
